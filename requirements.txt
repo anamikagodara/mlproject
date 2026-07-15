@@ -4,4 +4,6 @@ scikit-learn
 seaborn
 catboost
 xgboost
+matplotlib
+dill
 -e .
