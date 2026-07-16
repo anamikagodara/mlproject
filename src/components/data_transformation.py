@@ -6,7 +6,6 @@ import numpy as np
 from sklearn.impute import SimpleImputer
 from src.utils import save_object
 
-from src.components.data_ingestion import DataIngestion 
 
 
 from sklearn.compose import ColumnTransformer
@@ -104,7 +103,9 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)  
 if __name__=="__main__":
+    from src.components.data_ingestion import DataIngestion
     obj=DataIngestion()
+    
     train_data,test_data=obj.initiate_data_ingestion()
 
     data_transformation=DataTransformation()
