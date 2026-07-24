@@ -1,1 +1,23 @@
-<h1> Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Prediction</title>
+</head>
+
+<body>
+
+    <h1>Welcome to Student Performance Prediction</h1>
+
+    <p>
+        Predict the student's math score based on their information.
+    </p>
+
+    <a href="{{ url_for('predict_datapoint') }}">
+        <button>Go to Prediction</button>
+    </a>
+
+</body>
+</html>
